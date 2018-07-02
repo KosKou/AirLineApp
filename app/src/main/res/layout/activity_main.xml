@@ -13,7 +13,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="227dp"
-        app:srcCompat="@drawable/KosKou" />
+        app:srcCompat="@drawable/koskou" />
 
     <TextView
         android:id="@+id/textView"
@@ -43,7 +43,6 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:shadowRadius="14dp"
         style="@style/login_button"
         android:text="Ingresar" />
 </LinearLayout>

@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     if (estado.contains("success")) {
 
                         Toast.makeText(MainActivity.this, "BIENVENIDO :D ", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                        Intent intent = new Intent(MainActivity.this, OptionActivity.class);
                         //Elementos enviados
                         intent.putExtra("idUsuario", idUsername);
                         intent.putExtra("username", username);

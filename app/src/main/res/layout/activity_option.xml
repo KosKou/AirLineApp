@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tan_background"
+    android:layout_height="match_parent"
+    tools:context=".OptionActivity">
+
+
+    <TextView
+        android:id="@+id/lblWelcome"
+        android:layout_width="match_parent"
+        android:background="@color/md_black_1000"
+        style="@style/CategoryStyle"
+        android:text="@string/message_welcome" />
+
+    <TextView
+        android:id="@+id/purchase"
+        style="@style/CategoryStyle"
+        android:background="@color/primaryColor"
+        android:text="@string/option_purchase" />
+
+    <TextView
+        android:id="@+id/purchaseds"
+        style="@style/CategoryStyle"
+        android:background="@color/category_numbers"
+        android:text="@string/option_listshow" />
+
+</LinearLayout>

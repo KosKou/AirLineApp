@@ -6,5 +6,6 @@ package com.tekshia.airline.Entity;
 * */
 public class Purchase {
     //Url Default
-    public static String Url = "sitiorandomfanboy.000webhostapp.com";
+//    public static String Url = "sitiorandomfanboy.000webhostapp.com";
+    public static String Url = "192.168.192.2:80";
 }

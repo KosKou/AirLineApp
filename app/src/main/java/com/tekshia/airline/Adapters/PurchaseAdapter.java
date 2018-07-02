@@ -27,6 +27,8 @@ public class PurchaseAdapter extends BaseAdapter {
     Button btnComprar;
     String IdUser;
 
+    private boolean btnMode;
+
     private ArrayList desId  = new ArrayList();
     private ArrayList destination = new ArrayList();
     private ArrayList desDate = new ArrayList();
@@ -49,6 +51,7 @@ public class PurchaseAdapter extends BaseAdapter {
         this.desAirline = desAirline;
         this.desImage = desImage;
         this.IdUser = IdUser;
+        this.btnMode = true;
     }
 
     @Override
@@ -80,7 +83,6 @@ public class PurchaseAdapter extends BaseAdapter {
 
         btnComprar = viewGroup.findViewById(R.id.btnComprar);
 
-
         String imageURL = "http://"+ Purchase.Url+"/WSAirline/images/"+desImage.get(i).toString()+".jpg";
         Rect rect = new Rect(smartImage.getLeft(),smartImage.getTop(),smartImage.getRight(),smartImage.getBottom());
 
@@ -108,6 +110,18 @@ public class PurchaseAdapter extends BaseAdapter {
                 context.startActivity(intent);
             }
         });
+        //Desactivamos objetos de la vista
+        if (btnMode == false){
+            btnComprar.setVisibility(View.GONE);
+        }
         return  viewGroup;
+    }
+
+    public boolean isBtnMode() {
+        return btnMode;
+    }
+
+    public void setBtnMode(boolean btnMode) {
+        this.btnMode = btnMode;
     }
 }
